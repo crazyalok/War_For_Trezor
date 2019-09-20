@@ -4,7 +4,7 @@ session_start();
 $dbservername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
-$dbname = "quiztrack";
+$dbname = "warfortrezor";
 
 $conn = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
 if(isset($_POST['submit']))
