@@ -9,10 +9,17 @@ if(isset($_SESSION["enrollment"])!= "")
   <link rel="icon" href="mil.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="asset/css/style.css">
+	<sript>
+	$('a.yourlink').click(function(e) {
+    	e.preventDefault();
+   	window.open('https://www.facebook.com/');
+    	window.open('https://www.youtube.com/');
+	});
+	</script>
 </head>
 
 <body>
-<form action="questionconnect.php" method="post">
+<!--<form action="questionconnect.php" method="post">-->
 <!--<form action="q1connect.php" method="post">-->
 <div class="box black">
 <div align="center">
@@ -22,12 +29,12 @@ if(isset($_SESSION["enrollment"])!= "")
     <div class="container">
       <input type="text" placeholder="Your Answer" name="answer">
         <br>
-      <button type="submit" name="submit" value="0"><strong>Submit</strong></button>
+      <button href="#" class="yourlink" type="submit" name="submit" value="0"><strong>Submit</strong></button>
       <br><br>
     </div>
   </div>
 </div>
-</form>
+<!--</form>-->
 <!--</form>-->
 <div class="footer">
   <img src="asset/image/ig.png" width="50" height="50">
