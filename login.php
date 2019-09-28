@@ -5,6 +5,10 @@
   <link rel="icon" href="mil.png" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="asset/css/style.css">
+   <script>
+        if(window.history.forward(1) != null)
+        window.history.forward(1);
+   </script>
 </head>
 
 <body>
@@ -20,6 +24,7 @@
 <div align="center">
   <br>
 <h2 style="color:white">Login to participate in war for trezor..</h2>
+<br>
     <div class="container">
       <input type="text" placeholder=" Name " name="name">
         <br>
@@ -37,7 +42,7 @@
 
 <form action="signup.php" method="post">
  <div align="center">
-  <br><br>
+  <br>
     <div class="container">
       <p style="color:black"><strong>Didn't registered yet?</strong><br><button type="submit" href="signup.php"><strong>Register</strong></button></p>
     </div>
