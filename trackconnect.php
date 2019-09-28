@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
 	$answer = $_POST['answer'];
 	$question = $_POST['submit'];
 }
-    $enrno = $_SESSION["enrno"];
-    $sql= "INSERT INTO leaderboard VALUES ('$question','$enrno','$answer');";
-					mysqli_query($conn,$sql);
+    $enrollment = $_SESSION["enrollment"];
+    $sql= "INSERT INTO leaderboard VALUES ('$question','enrollment','$answer');";
+    mysqli_query($conn,$sql);
 ?>
