@@ -41,13 +41,13 @@ if(empty($enrollment) || empty($name))
 				{ 
 				header("location: question.php");
 				$_SESSION["enrollment"] = "$enrollment";
+				//$_SESSION["valuex"] = "1";
 				}
 				else
 				{
 					header("location: login.php?login=error_wrong_password");
 						exit();
 				}
-			
 	        }
 	    }
 	}
