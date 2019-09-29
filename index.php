@@ -2,9 +2,10 @@
 <head>
   <meta charset="UTF-8">
 	<title>Quiz</title>
-  <link rel="icon" href="mil.png" type="image/x-icon">
+  <link rel="icon" href="https://i.imgur.com/hmaZoKf.gif" type="image/gif">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="asset/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <script>
         if(window.history.forward(1) != null)
         window.history.forward(1);
@@ -44,7 +45,7 @@
  <div align="center">
   <br>
     <div class="container">
-      <p style="color:black"><strong>Didn't registered yet?</strong><br><button type="submit" href="signup.php"><strong>Register</strong></button></p>
+      <p style="color:white"><strong>Didn't registered yet?</strong><br><button type="submit" href="signup.php"><strong>Register</strong></button></p>
     </div>
   </div>
 </form>
