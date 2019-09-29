@@ -1,5 +1,6 @@
 # WAR FOR TREZOR
-### A portal where you can play quiz which is based of different types of question
+### A portal where you can play image quiz which is based of different types of question
+#### As it is made for the students of JUET,Guna
 * This project is developed by following languages-
   * HTML
   * CSS
