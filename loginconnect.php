@@ -1,23 +1,23 @@
 <?php
-
 session_start();
-
 $dbservername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "warfortrezor";
 
-$conn = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
+$conn = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname,3306);
 
 if(isset($_POST['submit']))
 {
 	$name = mysqli_real_escape_string($conn, $_POST['name']);
 	$enrollment = mysqli_real_escape_string($conn, $_POST['enrollment']);
+    $name = strtoupper($name);
+    $enrollment = strtoupper($enrollment);
 }
 
 if(empty($enrollment) || empty($name))
 {
-		header("location: login.php?login=empty");
+		header("location: index.php?login=empty");
 		exit();
 	}
 		else
@@ -29,7 +29,7 @@ if(empty($enrollment) || empty($name))
 
 		if($resultcheck < 1)
 		{
-			header("location: login.php?login=error_wrong_enrollment_number");
+			header("location: index.php?login=error_wrong_enrollment_number");
 			exit();
 		}
 		else
@@ -39,13 +39,13 @@ if(empty($enrollment) || empty($name))
 			{
 				if($row['name']=="$name" && $row['enrollment']=="$enrollment")
 				{ 
-				header("location: question.php");
+				header("location: afterlogin.php");
 				$_SESSION["enrollment"] = "$enrollment";
 				//$_SESSION["valuex"] = "1";
 				}
 				else
 				{
-					header("location: login.php?login=error_wrong_password");
+					header("location: index.php?login=error_wrong_password");
 						exit();
 				}
 	        }
