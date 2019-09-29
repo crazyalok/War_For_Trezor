@@ -6,27 +6,21 @@ if($_SESSION["enrollment"]!="")
   <head>
       <meta charset="UTF-8">
     	<title>Quiz</title>
-      <link rel="icon" href="mil.png" type="image/x-icon">
+  <link rel="icon" href="https://i.imgur.com/hmaZoKf.gif" type="image/gif">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
       <link rel="stylesheet" href="asset/css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        <script>
         if(window.history.forward(1) != null)
         window.history.forward(1);
     </script>
-    <!--<script>
-        window.onload = function()
-        {
-          document.getElementById('clickB').click();
-        }
-      </script>-->
-      <?php require_once('./questionconnect.php');?>
   </head>
 
   <body>
     <!--this is used for navigation bar on top made by ankit-->
       <div class="navbar" align="left">
         <div align="right">
-          <a href="">Leaderboard</a>
+          <a href="leaderboard.php">Leaderboard</a>
           <a href="logout.php">Logout</a>
         </div>
       </div>
@@ -43,17 +37,16 @@ if($_SESSION["enrollment"]!="")
                   <input type="text" placeholder="Your Answer" name="answer">
                   <br><br>
                   <input type="hidden" name="qid" value="1">
-                  <button type="submit" id="clickB" name="submit"><strong>Submit</strong></button>
-                  <!--<button><a href="questionconnect.php" type="submit" name="submit" onclick="window.open('trackconnect.php'); return true;">Submit</a></button>-->
+                  <button type="submit" name="submit"><strong>Submit</strong></button>
               </div>
           </div>
       </div>
     </form>
   <!--</form>-->
     <div class="footer">
-      <a href="https://www.instagram.com/_ankit_jayswal/?hl=en"><img src="asset/image/ig.png" width="50" height="50"></a>
-      <a href="https://www.facebook.com/ryder.raj.ankit"><img src="asset/image/fb.png" width="50" height="50"></a>
-      <a href="https://in.linkedin.com/in/ankit-raj-2a74b017a"><img src="asset/image/link.png" width="50" height="50"></a>
+      <a href="https://www.instagram.com/_ankit_jayswal/?hl=en"><img src="https://i.imgur.com/KjbQEwm.png" width="50" height="50"></a>
+      <a href="https://www.facebook.com/ryder.raj.ankit"><img src="https://i.imgur.com/ulkQfJY.png" width="50" height="50"></a>
+      <a href="https://in.linkedin.com/in/ankit-raj-2a74b017a"><img src="https://i.imgur.com/Y2kBHHP.png" width="50" height="50"></a>
     </div>
   </body>
           <!--it will disable the right click among the web page-->
@@ -94,6 +87,6 @@ if($_SESSION["enrollment"]!="")
                  }
 
             else{
-                    echo ('<meta http-equiv="refresh" content="0; URL=login.php?login=incorrect">');
+                    echo ('<meta http-equiv="refresh" content="0; URL=index.php?login=incorrect">');
                 }
 ?>
