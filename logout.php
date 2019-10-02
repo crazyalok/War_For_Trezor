@@ -14,7 +14,6 @@ $_SESSION["enrollment"]=array();
 
 <body>
 
-
 <div align="center">
 <br><br><br><br><br>
 <h1>WAR FOR TREZOR</h1>
@@ -24,7 +23,7 @@ $_SESSION["enrollment"]=array();
 <div class="box black">
 <div align="center">
   <br>
-<h2 style="color:white">Login to participate in war for trezor..</h2>
+<h2 style="color:white">Login to participate in War For Trezor...</h2>
 <br>
     <div class="container">
       <input type="text" placeholder=" Name " name="name">
